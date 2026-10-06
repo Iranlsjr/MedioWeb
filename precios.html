@@ -3,17 +3,18 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Precios | Tu nombre</title>
+<title>Precios | Medio Web</title>
 <meta name="description" content="Diseño de páginas web, tiendas online y sistemas a medida para pequeños negocios en Madrid.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
+<script src="Js/site.js" defer></script>
 </head>
 <body>
 <header>
   <div class="wrap">
-    <a class="logo" href="index.html">Tu nombre</a>
+    <a class="logo" href="index.html" data-site="nombre"></a>
     <nav><a href="servicios.html">Servicios</a><a href="precios.html" class="ativo">Precios</a><a class="btn btn-main btn-sm" href="contacto.html">Contacto</a></nav>
   </div>
 </header>
@@ -24,8 +25,9 @@
 </main>
 <footer>
   <div class="wrap">
-    <span>© 2026 Tu nombre · Madrid</span>
-    <span><a href="https://github.com/tu-usuario">GitHub</a> · <a href="https://linkedin.com/in/tu-usuario">LinkedIn</a> · <a href="privacidad.html">Privacidad</a></span>
+    <span>© 2026 <span data-site="nombre"></span> · <span data-site="ciudad"></span></span>
+    <span>Madrid</span>
+    <span><a href="https://github.com/Iranlsjr">GitHub</a> · <a href="https://www.linkedin.com/in/iran-asir/">LinkedIn</a> · <a href="privacidad.html">Privacidad</a></span>
   </div>
 </footer>
 </body>
