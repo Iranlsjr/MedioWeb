@@ -2,7 +2,7 @@
 const SITE = {
   nombre: "Medio Web",
   etiqueta: "Web",
-  ciudad: "ciudad"
+  ciudad: "Madrid"
 };
 
 document.querySelectorAll("[data-site]").forEach(el => {
