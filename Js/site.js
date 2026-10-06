@@ -1,7 +1,7 @@
 //alterar   Tu nombre uma vez no código e atualizar o logo em todas as páginas
 const SITE = {
-  nombre: "Medido WEb",
-  etiqueta: ""
+  nombre: "Medio Web",
+  etiqueta: "Web"
 };
 
 document.querySelectorAll("[data-site]").forEach(el => {
