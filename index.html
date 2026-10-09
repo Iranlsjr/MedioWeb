@@ -10,13 +10,25 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/menu.css">
 <script src="Js/site.js" defer></script>
+<script src="Js/menu.js" defer></script>
 </head>
 <body>
 <header>
   <div class="wrap">
-   <a class="logo" href="index.html" data-site="nombre"></a>
-    <nav><a href="servicios.html">Servicios</a><a href="precios.html">Precios</a><a href="sobre.html">Quién está detrás de MedioWeb</a><a class="btn btn-main btn-sm" href="contacto.html">Contacto</a></nav>
+    <a class="logo" href="index.html" data-site="nombre"></a>
+
+    <button class="menu-toggle" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="menu">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav id="menu" aria-label="Navegación principal">
+      <a href="servicios.html">Servicios</a>
+      <a href="precios.html">Precios</a>
+      <a href="sobre.html">Quién está detrás de MedioWeb</a>
+      <a class="btn btn-main btn-sm" href="contacto.html">Contacto</a>
+    </nav>
   </div>
 </header>
 <main>
@@ -45,7 +57,7 @@ Uma frase explicando o objetivo ou o que você desenvolveu.
 Botão “Ver proyecto”, para acessar o site ou seus detalhes. -->
 <div class="grid3">
 <article class="card"><h3>Webs corporativas</h3><p></p></article>
-</section>
+</div></div></section>
 
 <section style="padding-top:0"><div class="wrap"><div class="band"><div><h2 style="margin:0">¿Sacamos tu idea adelante?</h2><p class="lead">Respondo en menos de 24 horas.</p></div><a class="btn btn-main" href="contacto.html">Pedir presupuesto</a></div></div></section>
 </main>
