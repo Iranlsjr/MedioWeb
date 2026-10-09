@@ -3,37 +3,229 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Precios | Medio Web</title>
-<meta name="description" content="Diseño de páginas web, tiendas online y sistemas a medida para pequeños negocios en Madrid.">
+<title>Sobre mí | Iran Lourenço — Medio Web</title>
+<meta name="description" content="Conoce a Iran Lourenço, técnico de soporte de TI y estudiante de ASIR en Madrid, con experiencia en desarrollo web, bases de datos SQL y pruebas de sistemas.">
+<link rel="canonical" href="https://iranlsjr.github.io/MedioWeb/sobre.html">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
+<style>
+  /* ── Layout foto + texto ── */
+  .sobre-presentacion {
+    display: flex;
+    align-items: flex-start;
+    gap: 48px;
+  }
+
+  .sobre-foto {
+    flex: 0 0 260px;
+    margin: 0;
+  }
+
+  .sobre-foto img {
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 3 / 4;
+    object-fit: cover;
+    object-position: center top;
+    border-radius: 6px;
+    background: #e8e8e8;
+  }
+
+  .sobre-intro {
+    flex: 1;
+    min-width: 0;
+  }
+
+  /* ── Secciones de contenido ── */
+  .sobre-seccion {
+    padding: 40px 0;
+    border-top: 1px solid #e5e5e5;
+  }
+
+  .sobre-seccion:first-of-type {
+    border-top: none;
+  }
+
+  .sobre-seccion h2 {
+    margin-top: 0;
+    margin-bottom: 16px;
+  }
+
+  .sobre-seccion ul {
+    padding-left: 20px;
+    margin: 0;
+  }
+
+  .sobre-seccion ul li {
+    margin-bottom: 8px;
+  }
+
+  .sobre-seccion .btn {
+    margin-top: 24px;
+    display: inline-block;
+  }
+
+  /* ── Responsive: celular ── */
+  @media (max-width: 700px) {
+    .sobre-presentacion {
+      flex-direction: column;
+      gap: 24px;
+    }
+
+    .sobre-foto {
+      flex: none;
+      width: min(100%, 220px);
+    }
+  }
+</style>
 <script src="Js/site.js" defer></script>
 </head>
 <body>
+
 <header>
   <div class="wrap">
     <a class="logo" href="index.html" data-site="nombre"></a>
-    <nav><a href="servicios.html">Servicios</a><a href="precios.html" class="ativo">Precios</a><a class="btn btn-main btn-sm" href="contacto.html">Contacto</a></nav>
+    <nav aria-label="Navegación principal">
+      <a href="servicios.html">Servicios</a>
+      <a href="precios.html">Precios</a>
+      <a href="sobre.html" class="ativo" aria-current="page">Sobre mí</a>
+      <a class="btn btn-main btn-sm" href="contacto.html">Contacto</a>
+    </nav>
   </div>
 </header>
-<main>
-  <!-- Uma seção curta “Quién está detrás de MedioWeb” pode incluir:
 
-Seu nome e uma foto, se desejar.
-Sua experiência real.
-Os tipos de projetos que atende.
-Como funciona o contato direto com você. -->
-<section class="page-head"><div class="wrap"><h1 style="font-size:clamp(34px,5vw,48px)">Precios</h1><p class="lead">Precios de partida. El importe final depende de lo que necesites. Todos los importes sin IVA.</p></div></section>
-<section style="padding-top:32px"><div class="wrap"><div class="grid3" style="margin-top:0"><article class="card price"><h3>Básico</h3><p class="amount">desde 80 €</p><ul><li>Página única</li><li>Formulario de contacto</li><li>Versión para móvil</li></ul><a class="btn btn-line" href="contacto.html">Pedir presupuesto</a></article><article class="card price featured"><span class="tag">Más solicitado</span><h3>Medio</h3><p class="amount">desde 120 €</p><ul><li>5 a 7 páginas</li><li>Optimizada para Google</li><li>Dos idiomas</li></ul><a class="btn btn-main" href="contacto.html">Pedir presupuesto</a></article><article class="card price"><h3>Completo</h3><p class="amount">desde 190 €</p><ul><li>Tienda online o sistema</li><li>Panel de gestión</li><li>Mantenimiento mensual</li></ul><a class="btn btn-line" href="contacto.html">Pedir presupuesto</a></article></div>
-<p class="note">Dominio y hosting se pagan aparte y quedan a tu nombre. Pago en dos plazos: 50% al empezar y 50% a la entrega.</p></div></section>
+<main>
+
+  <!-- ── Presentación con foto ── -->
+  <section class="page-head">
+    <div class="wrap">
+      <div class="sobre-presentacion">
+
+        <figure class="sobre-foto">
+          <!--
+            Guarda tu foto con el nombre iran.jpg
+            en la misma carpeta que sobre.html.
+            Si usas otro nombre, cambia el valor de src.
+          -->
+          <img
+            src="iran.jpg"
+            alt="Retrato de Iran Lourenço"
+            width="260"
+            height="347"
+          >
+        </figure>
+
+        <div class="sobre-intro">
+          <h1 style="font-size:clamp(28px,5vw,48px); margin-top:0">
+            Quién está detrás de Medio Web
+          </h1>
+          <p class="lead">
+            Soy <strong>Iran Lourenço</strong>, brasileño residente en Madrid,
+            técnico de soporte de TI y estudiante de ASIR (Administración
+            de Sistemas Informáticos en Red).
+          </p>
+          <p>
+            Con Medio Web, pongo mis conocimientos al servicio de pequeños
+            negocios que necesitan una presencia online clara y funcional,
+            con un trato cercano y sin tecnicismos.
+          </p>
+          <a class="btn btn-main" href="contacto.html">Cuéntame tu proyecto</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Trayectoria ── -->
+  <section class="sobre-seccion">
+    <div class="wrap">
+      <div style="max-width:720px">
+        <h2>Del soporte técnico al desarrollo web</h2>
+        <p>
+          Mi experiencia combina la atención a usuarios con el trabajo técnico
+          en sistemas y aplicaciones web. En Grupo DM10, en São Paulo, trabajé
+          primero como becario en desarrollo de sistemas y después como analista
+          de soporte de TI.
+        </p>
+        <p>
+          Durante esa etapa participé en pruebas funcionales, resolución de
+          incidencias, documentación de problemas y soluciones, y gestión de
+          bases de datos SQL. También trabajé en desarrollo web e integración
+          entre front-end y back-end.
+        </p>
+        <p>
+          Esa trayectoria me permitió conocer tanto la parte técnica como las
+          dificultades reales que las personas encuentran al usar una
+          herramienta digital.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Conocimientos ── -->
+  <section class="sobre-seccion">
+    <div class="wrap">
+      <div style="max-width:720px">
+        <h2>Conocimientos que aporto a cada proyecto</h2>
+        <ul>
+          <li><strong>Desarrollo web:</strong> HTML, CSS, JavaScript, PHP, Python y Angular.</li>
+          <li><strong>Datos e integraciones:</strong> bases de datos SQL y consumo de APIs REST con JSON.</li>
+          <li><strong>Pruebas y mantenimiento:</strong> pruebas funcionales, identificación de errores y mantenimiento de aplicaciones web.</li>
+          <li><strong>Control de versiones:</strong> Git.</li>
+          <li><strong>Soporte:</strong> atención al usuario, resolución de incidencias y documentación técnica.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Formación ── -->
+  <section class="sobre-seccion">
+    <div class="wrap">
+      <div style="max-width:720px">
+        <h2>Una formación que sigue creciendo</h2>
+        <p>
+          Actualmente curso Administración de Sistemas Informáticos en Red
+          (ASIR) en thePower, para ampliar mi formación en sistemas y redes.
+        </p>
+        <p>
+          Mi idioma nativo es el portugués. Tengo nivel conversacional de
+          español e inglés, lo que me permite trabajar con clientes y
+          documentación en los tres idiomas.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CTA final ── -->
+  <section class="sobre-seccion">
+    <div class="wrap">
+      <div style="max-width:720px">
+        <h2>¿Hablamos?</h2>
+        <p>
+          Si necesitas una página web, una tienda online o un sistema a medida,
+          cuéntame tu idea. Respondo en menos de 24 horas.
+        </p>
+        <a class="btn btn-main" href="contacto.html">Pedir presupuesto</a>
+      </div>
+    </div>
+  </section>
+
 </main>
+
 <footer>
   <div class="wrap">
     <span>© 2026 <span data-site="nombre"></span> · <span data-site="ciudad"></span></span>
-    <span><a href="https://github.com/Iranlsjr">GitHub</a> · <a href="https://www.linkedin.com/in/iran-asir/">LinkedIn</a> · <a href="privacidad.html">Privacidad</a></span>
+    <span>
+      <a href="https://github.com/Iranlsjr">GitHub</a> ·
+      <a href="https://www.linkedin.com/in/iran-asir/">LinkedIn</a> ·
+      <a href="privacidad.html">Privacidad</a>
+    </span>
   </div>
 </footer>
+
+<script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/v4bc70e2c01a94c73b74392e4234840661791215815920" integrity="sha512-L0ha0OXavK/8okipN9F8BtP84dg9DUhPERbBXzwI6dgTA55d2+yweo3pn5CSFYs45/r8md2+xvUPtTdvTNRfjA==" data-cf-beacon='{"version":"2024.11.0","token":"f0f03d0605bf45f1a3b17cf7d5e6861f","spa":2}' crossorigin="anonymous"></script>
 </body>
 </html>
