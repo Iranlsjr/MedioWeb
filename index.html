@@ -1,71 +1,115 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Medio Web | Diseño de páginas web en Madrid</title>
-<meta name="description" content="Diseño de páginas web, tiendas online y sistemas a medida para pequeños negocios en Madrid. Precio cerrado y acompañamiento tras la entrega.">
-<link rel="canonical" href="https://iranlsjr.github.io/MedioWeb/">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/style.css">
-<link rel="stylesheet" href="css/menu.css">
-<script src="Js/site.js" defer></script>
-<script src="Js/menu.js" defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Medio Web | Diseño de páginas web en Madrid</title>
+  <meta name="description"
+    content="Diseño de páginas web, tiendas online y sistemas a medida para pequeños negocios en Madrid. Precio cerrado y acompañamiento tras la entrega.">
+  <link rel="canonical" href="https://iranlsjr.github.io/MedioWeb/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700&family=DM+Sans:wght@400;500&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/menu.css">
+  <script src="Js/site.js" defer></script>
+  <script src="Js/menu.js" defer></script>
 </head>
+
 <body>
-<header>
+  <header>
+    <div class="wrap">
+      <a class="logo" href="index.html" data-site="nombre"></a>
+
+      <button class="menu-toggle" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="menu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav id="menu" aria-label="Navegación principal">
+        <a href="servicios.html">Servicios</a>
+        <a href="precios.html">Precios</a>
+        <a href="sobre.html">Quién está detrás de MedioWeb</a>
+        <a class="btn btn-main btn-sm" href="contacto.html">Contacto</a>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section class="hero">
+      <div class="wrap">
+        <div>
+          <h1>Tu negocio online, <span>como lo necesitas</span></h1>
+          <p>Creo páginas web para tu negocio, y sigo a tu lado después de la entrega.</p>
+          <div class="actions"><a class="btn btn-main" href="contacto.html">Pedir presupuesto</a><a class="btn btn-line"
+              href="servicios.html">Ver servicios</a></div>
+        </div>
+        <div class="panel">
+          <ul>
+            <li><span><strong>Sin sorpresas</strong>Precio cerrado antes de empezar.</span></li>
+            <li><span><strong>Funciona en el móvil</strong>Cada web se prueba en pantallas pequeñas.</span></li>
+            <li><span><strong>Dominio a tu nombre</strong>Te quedas con el código y los accesos.</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <!-- Que  hago -->
+    <section>
+      <div class="wrap">
+        <h2>Qué hago</h2>
+        <div class="grid3">
+          <article class="card">
+            <h3>Webs corporativas</h3>
+            <p>Páginas claras con tus servicios y formas de contacto.</p>
+          </article>
+          <article class="card">
+            <h3>Tiendas online</h3>
+            <p>Catálogo, pago y gestión de pedidos.</p>
+          </article>
+          <article class="card">
+            <h3>Sistemas a medida</h3>
+            <p>Paneles y áreas de clientes para tu forma de trabajar.</p>
+          </article>
+        </div>
+        <p class="note"><a href="servicios.html">Ver el detalle de cada servicio</a></p>
+      </div>
+    </section>
+    <!-- Que  portfolio -->
+<section id="proyectos">
   <div class="wrap">
-    <a class="logo" href="index.html" data-site="nombre"></a>
+    <h2>Proyectos</h2>
+    <p>Algunos de mis trabajos.</p>
 
-    <button class="menu-toggle" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="menu">
-      <span></span><span></span><span></span>
-    </button>
+    <div class="grid3">
 
-    <nav id="menu" aria-label="Navegación principal">
-      <a href="servicios.html">Servicios</a>
-      <a href="precios.html">Precios</a>
-      <a href="sobre.html">Quién está detrás de MedioWeb</a>
-      <a class="btn btn-main btn-sm" href="contacto.html">Contacto</a>
-    </nav>
+      <article class="card project">
+        <img src="assets/img/projetos/pisofacil.png" alt="Captura del proyecto Piso Fácil" loading="lazy">
+        <h3>Piso Fácil</h3>
+        <p> </p>
+        <a class="button" href="https://iranlsjr.github.io/PisoFacil/" target="_blank" rel="noopener">Ver proyecto</a>
+      </article>
+    </div>
   </div>
-</header>
-<main>
-<section class="hero"><div class="wrap">
-<div><h1>Tu negocio online, <span>como lo necesitas</span></h1>
-<p>Creo páginas web para tu negocio, y sigo a tu lado después de la entrega.</p>
-<div class="actions"><a class="btn btn-main" href="contacto.html">Pedir presupuesto</a><a class="btn btn-line" href="servicios.html">Ver servicios</a></div></div>
-<div class="panel"><ul>
-<li><span><strong>Sin sorpresas</strong>Precio cerrado antes de empezar.</span></li>
-<li><span><strong>Funciona en el móvil</strong>Cada web se prueba en pantallas pequeñas.</span></li>
-<li><span><strong>Dominio a tu nombre</strong>Te quedas con el código y los accesos.</span></li></ul></div>
-</div></section>
-<!-- Que  hago -->
-<section><div class="wrap"><h2>Qué hago</h2>
-<div class="grid3">
-<article class="card"><h3>Webs corporativas</h3><p>Páginas claras con tus servicios y formas de contacto.</p></article>
-<article class="card"><h3>Tiendas online</h3><p>Catálogo, pago y gestión de pedidos.</p></article>
-<article class="card"><h3>Sistemas a medida</h3><p>Paneles y áreas de clientes para tu forma de trabajar.</p></article>
-</div><p class="note"><a href="servicios.html">Ver el detalle de cada servicio</a></p></div></section>
-<!-- Que  portfolio 
-<section><div class="wrap"><h2>Proyectos</h2>
-   Uma seção chamada “Proyectos” ou “Algunos de mis trabajos”, com até 3 projetos em destaque. Cada projeto teria:
-Uma imagem do site.
-Nome do projeto.
-Uma frase explicando o objetivo ou o que você desenvolveu.
-Botão “Ver proyecto”, para acessar o site ou seus detalhes. 
-<div class="grid3">
-<article class="card"><h3>Webs corporativas</h3><p></p></article>
-</div></div></section>-->
+</section>
 
-<section style="padding-top:0"><div class="wrap"><div class="band"><div><h2 style="margin:0">¿Sacamos tu idea adelante?</h2><p class="lead">Respondo en menos de 24 horas.</p></div><a class="btn btn-main" href="contacto.html">Pedir presupuesto</a></div></div></section>
-</main>
-<footer>
-  <div class="wrap">
-    <span>© 2026 <span data-site="nombre"></span> · <span data-site="ciudad"></span></span>
-  <span data-enlaces></span>
-  </div>
-</footer>
+    <section style="padding-top:0">
+      <div class="wrap">
+        <div class="band">
+          <div>
+            <h2 style="margin:0">¿Sacamos tu idea adelante?</h2>
+            <p class="lead">Respondo en menos de 24 horas.</p>
+          </div><a class="btn btn-main" href="contacto.html">Pedir presupuesto</a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="wrap">
+      <span>© 2026 <span data-site="nombre"></span> · <span data-site="ciudad"></span></span>
+      <span data-enlaces></span>
+    </div>
+  </footer>
 </body>
+
 </html>

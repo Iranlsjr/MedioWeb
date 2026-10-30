@@ -89,3 +89,26 @@ nav a.ativo{color:var(--ink);font-weight:500}
 .band{background:var(--teal-soft);border-radius:16px;padding:32px;display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap}
 @media(max-width:820px){.detail{grid-template-columns:1fr;gap:12px}}
 
+.project {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  overflow: hidden;
+}
+
+.project img {
+  width: 100%;
+  aspect-ratio: 16 / 10;   /* todas as imagens com a mesma proporção */
+  object-fit: cover;       /* corta sem deformar */
+  border-radius: 8px;
+  display: block;
+}
+
+.project p {
+  flex: 1;                 /* empurra o botão para o fim do cartão */
+  margin: 0;
+}
+
+.project .button {
+  align-self: flex-start;
+}
